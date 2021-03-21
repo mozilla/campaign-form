@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "id": 1,
+    "content": "**Summary:** ",
+    "hidden": true,
+    "required": true,
+    "pattern": ".+"
+  },
+  "firefox": {
+    "id": 100,
+    "content": "**Firefox Version:** ",
+    "required": true,
+    "pattern": ".+"
+  },
+  "resolution": {
+    "id": 300,
+    "content": "**Window Size (inner width and height):** ",
+    "required": true,
+    "pattern": ".+"
+  },
+  "github": {
+    "id": 500,
+    "content": "**GitHub Username:** "
+  },
+  "reproduce": {
+    "id": 600,
+    "heading": true,
+    "content": "## Steps to Reproduce",
+    "required": true,
+    "pattern": ".+"
+  },
+  "expected": {
+    "id": 700,
+    "heading": true,
+    "content": "## Expected Behavior",
+    "required": true,
+    "pattern": ".+"
+  },
+  "actual": {
+    "id": 800,
+    "heading": true,
+    "content": "## Actual Behavior",
+    "required": true,
+    "pattern": ".+"
+  },
+  "screenshot": {
+    "id": 900,
+    "image": true,
+    "content": "## Screenshot"
+  }
+}
