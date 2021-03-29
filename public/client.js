@@ -7,7 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const resolutionInput = document.querySelector('#resolution');
   resolutionInput.value = window.innerWidth + 'x' + window.innerHeight;
 
+  let resolutionChanged = false;
+  resolutionInput.addEventListener('change', () => {
+    resolutionChanged = true;
+  });
   window.onresize = () => {
-    resolutionInput.value = window.innerWidth + 'x' + window.innerHeight;
+    if (!resolutionChanged) {
+      resolutionInput.value = window.innerWidth + 'x' + window.innerHeight;
+    }
   }
 });
