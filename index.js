@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const debug = require('debug')('mozilla-proton-campaign-form:server');
+const debug = require('debug')('campaign-form:server');
 const http = require('http');
 const app = require('./app');
 

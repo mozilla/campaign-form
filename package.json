@@ -1,8 +1,8 @@
 {
-  "name": "mozilla-proton-campaign-form",
+  "name": "campaign-form",
   "version": "1.0.0",
   "scripts": {
-    "start": "DEBUG=mozilla-proton-campaign-form* node index.js"
+    "start": "DEBUG=campaign-form* node index.js"
   },
   "dependencies": {
     "@octokit/rest": "^18.7.2",

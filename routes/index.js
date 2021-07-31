@@ -1,6 +1,6 @@
 'use strict';
 
-const debug = require('debug')('mozilla-proton-campaign-form:routes');
+const debug = require('debug')('campaign-form:routes');
 const express = require('express');
 const formHandling = require('../lib/formHandling');
 const githubBackend = require('../lib/githubBackend');
@@ -23,7 +23,7 @@ router.post('/create', async (req, res) => {
     const issueNumber = issueInfo && issueInfo.data && issueInfo.data.number;
     debug('ISSUE_CREATED_REDIRECTING_BACK', issueNumber);
     res.redirect('/?success=true&submitted=true');
-  } catch(error) {
+  } catch (error) {
     debug('OH_NO_COULD_NOT_CREATE', error);
     res.redirect('/?success=false&submitted=true');
   }
