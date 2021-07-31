@@ -35,7 +35,7 @@ The following environment variables are needed. Note that you will need to set t
 
 | Variable | Description | Example
 |---|---|---|
-| BASE_URL | URL of the form | https://form.mozilla.community |
+| BASE_URL | URL of the form | https://form.mozilla.community/ |
 | GITHUB_TOKEN | Token for the GitHub user to post issues | ... |
 | OWNER | GitHub username / organization hosting the reporting repo | mozilla |
 | REPO | GitHub repository name to host the issues | campaign-form |
@@ -43,13 +43,19 @@ The following environment variables are needed. Note that you will need to set t
 
 ## Changes needed for new campaigns
 
+### Coding
+
 * Check the `fields_config.json` file and adjust if needed
 * Adjust `lib/formHandling.js` to work together with the defined fields
 * Adjust `public/client.js` if any fields need pre-filling (such as UA)
 * Check `lib/githubBackend.js` to adjust possible version / OS GitHub labels and create them in the GitHub repo
 * Adjust `views/index.pug` to reflect correct strings and fields (if a previous campaign got stopped, you might need to revert previous changes to get back the form fields and then adjust them)
-* Adjust title in `views/layout.pug`
+
+### Design
 * Adjust logo in `public/logo.svg`
+* Adjust title in `views/layout.pug`
+
+### Operation / Admin
 * Adjust GA ID in `public/ga.js`
 * Set up Heroku instance to host this
 * Get a *.mozilla.community domain and redirect it to the appropriate Heroku instance
