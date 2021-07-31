@@ -5,10 +5,10 @@
     "start": "DEBUG=mozilla-proton-campaign-form* node index.js"
   },
   "dependencies": {
-    "@octokit/rest": "^18.3.5",
-    "debug": "^4.3.1",
+    "@octokit/rest": "^18.7.2",
+    "debug": "^4.3.2",
     "express": "^4.17.1",
-    "express-session": "^1.17.1",
+    "express-session": "^1.17.2",
     "formidable": "^1.2.2",
     "morgan": "^1.10.0",
     "pug": "^3.0.2",
