@@ -22,12 +22,12 @@ Then you can start the server with the following command. Make sure to replace t
 $ git clone <URL>
 $ cd campaign-form
 $ npm ci
-$ GITHUB_TOKEN=<yourGitHubToken> OWNER=<yourGitHubUsername> REPO=<yourGitHubRepoForIssues> SESSION_SECRET=someSECRET BASE_URL=http://localhost:4000/ npm start
+$ GITHUB_TOKEN=<yourGitHubToken> OWNER=<yourGitHubUsername> REPO=<yourGitHubRepoForIssues> SESSION_SECRET=someSECRET BASE_URL=http://localhost:4000/ AWS_ACCESS_KEY_ID="<yourAWSAccessKeyID" AWS_SECRET_ACCESS_KEY="<yourAWSAccessKey>" AWS_S3_BUCKET_NAME="<yourAWSS3BucketName>" npm start
 ```
 
-Now you can access the website for it at ```localhost:4000```.
+Note: you can leave off the AWS configuration, however screenshots won't be uploaded and won't be shown in the resulting GitHub issue.
 
-**Note:** When running locally, screenshots won't be appended to the resulting GitHub Issue
+Now you can access the website for it at ```localhost:4000```.
 
 ## Environment variables
 
@@ -35,6 +35,9 @@ The following environment variables are needed. Note that you will need to set t
 
 | Variable | Description | Example
 |---|---|---|
+| AWS_ACCESS_KEY_ID | AWS Access Key ID to upload screenshots | ... |
+| AWS_SECRET_ACCESS_KEY | AWS Access Key Secret to upload screenshots | ... |
+| AWS_S3_BUCKET_NAME | AWS S3 Bucket name to upload screenshots to | campaign-form-uploads |
 | BASE_URL | URL of the form | https://form.mozilla.community/ |
 | GITHUB_TOKEN | Token for the GitHub user to post issues | ... |
 | OWNER | GitHub username / organization hosting the reporting repo | mozilla |
@@ -56,6 +59,7 @@ The following environment variables are needed. Note that you will need to set t
 * Adjust title in `views/layout.pug`
 
 ### Operation / Admin
+* Add bot as collaborator to issue repository
 * Adjust GA ID in `public/ga.js`
 * Set up Heroku instance to host this
 * Get a *.mozilla.community domain and redirect it to the appropriate Heroku instance

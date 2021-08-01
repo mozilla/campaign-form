@@ -6,10 +6,12 @@
   },
   "dependencies": {
     "@octokit/rest": "^18.7.2",
+    "aws-sdk": "^2.958.0",
     "debug": "^4.3.2",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "formidable": "^1.2.2",
+    "mime": "^1.6.0",
     "morgan": "^1.10.0",
     "pug": "^3.0.2",
     "uuid": "^8.3.2"
