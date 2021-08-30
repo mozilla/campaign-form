@@ -55,11 +55,12 @@ The following environment variables are needed. Note that you will need to set t
 * Adjust `views/index.pug` to reflect correct strings and fields (if a previous campaign got stopped, you might need to revert previous changes to get back the form fields and then adjust them)
 
 ### Design
-* Adjust logo in `public/logo.svg`
+
+* Adjust logo in `public/` and its used alt text in `views/index.pug`
+* Adjust header background color if needed
 * Adjust title in `views/layout.pug`
 
 ### Operation / Admin
+
 * Add bot as collaborator to issue repository
 * Adjust GA ID in `public/ga.js`
-* Set up Heroku instance to host this
-* Get a *.mozilla.community domain and redirect it to the appropriate Heroku instance

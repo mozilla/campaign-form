@@ -35,13 +35,13 @@ a:hover {
 header {
   width: 100vw;
   padding: 24px;
-  background-color: #1c1b22;
+  background-color: #1d1234;
   text-align: center;
 }
 
 header img {
-  width: 25vw;
-  max-width: 200px;
+  width: 50vw;
+  max-width: 300px;
 }
 
 .container {
