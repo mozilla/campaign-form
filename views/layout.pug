@@ -10,4 +10,11 @@ html(lang='en-US')
   body
     block content
     script(src="/client.js")
-    script(src="/ga.js")
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=G-2FSLCNZQRJ")
+    script.
+      if (navigator.doNotTrack !== '1') {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2FSLCNZQRJ');
+      }

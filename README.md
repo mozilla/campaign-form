@@ -38,7 +38,7 @@ The following environment variables are needed. Note that you will need to set t
 | AWS_ACCESS_KEY_ID | AWS Access Key ID to upload screenshots | ... |
 | AWS_SECRET_ACCESS_KEY | AWS Access Key Secret to upload screenshots | ... |
 | AWS_S3_BUCKET_NAME | AWS S3 Bucket name to upload screenshots to | campaign-form-uploads |
-| BASE_URL | URL of the form | https://form.mozilla.community/ |
+| BASE_URL | URL of the form | https://foxfooding-form.mozilla.community/ |
 | GITHUB_TOKEN | Token for the GitHub user to post issues | ... |
 | OWNER | GitHub username / organization hosting the reporting repo | mozilla |
 | REPO | GitHub repository name to host the issues | campaign-form |
@@ -50,17 +50,13 @@ The following environment variables are needed. Note that you will need to set t
 
 * Check the `fields_config.json` file and adjust if needed
 * Adjust `lib/formHandling.js` to work together with the defined fields
-* Adjust `public/client.js` if any fields need pre-filling (such as UA)
-* Check `lib/githubBackend.js` to adjust possible version / OS GitHub labels and create them in the GitHub repo
 * Adjust `views/index.pug` to reflect correct strings and fields (if a previous campaign got stopped, you might need to revert previous changes to get back the form fields and then adjust them)
-
-### Design
-
-* Adjust logo in `public/` and its used alt text in `views/index.pug`
-* Adjust header background color if needed
+* Adjust logo in `public/` and its alt text in `views/index.pug`
 * Adjust title in `views/layout.pug`
+* Check `lib/githubBackend.js` to adjust possible version / OS GitHub labels and create them in the GitHub issues repo
+* Adjust `public/client.js` if any fields need pre-filling (such as UA)
+* Adjust header background color in `public/style.css` if needed
 
 ### Operation / Admin
 
-* Add bot as collaborator to issue repository
-* Adjust GA ID in `public/ga.js`
+* Add `mozilla-campaign-form-bot` GitHub user as collaborator to issues repository
