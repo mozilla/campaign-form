@@ -3,7 +3,7 @@ extends layout
 block content
   header
     a(href="/")
-      img(src="/logo.png", alt="Firefox Focus - Foxfooding Campaign")
+      img(src="/logo.svg", alt="Firefox Nightly Logo")
 
   .container
     if submitted && success
@@ -16,7 +16,7 @@ block content
         p We're sorry.
 
     .form-container
-      h1 Report a bug
+      h1 Report a bug - Foxfooding for Android and iOS
 
       form(action="/create", method="POST", enctype="multipart/form-data")
         label Fields marked with <span>*</span> are required. Please make sure to file this form on the device you're testing on. This allows us to correct version and the window size.
@@ -26,6 +26,9 @@ block content
         div(class="input-group")
           label(for="resolution") Window Size&nbsp;<span>*</span>
           input(id="resolution", type="text", name="resolution", required, placeholder="for example: 1200x800")
+        div(class="input-group")
+          label(for="phone") What phone are you using?&nbsp;<span>*</span>
+          input(id="phone", type="text", name="phone", required, placeholder="for example: Samsung Galaxy S10")
         h2 Issue Description
         div(class="input-group")
           label(for="summary") Short summary&nbsp;<span>*</span>

@@ -18,6 +18,11 @@
     "required": true,
     "pattern": ".+"
   },
+  "phone": {
+    "id": 400,
+    "content": "**Phone:** ",
+    "pattern": ".+"
+  },
   "github": {
     "id": 500,
     "content": "**GitHub Username:** "
