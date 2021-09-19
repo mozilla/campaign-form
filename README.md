@@ -25,7 +25,7 @@ $ npm ci
 $ GITHUB_TOKEN=<yourGitHubToken> OWNER=<yourGitHubUsername> REPO=<yourGitHubRepoForIssues> SESSION_SECRET=someSECRET BASE_URL=http://localhost:4000/ AWS_ACCESS_KEY_ID="<yourAWSAccessKeyID" AWS_SECRET_ACCESS_KEY="<yourAWSAccessKey>" AWS_S3_BUCKET_NAME="<yourAWSS3BucketName>" npm start
 ```
 
-Note: you can leave off the AWS configuration, however screenshots won't be uploaded and won't be shown in the resulting GitHub issue.
+Note: you can leave off the AWS configuration, however attachments won't be uploaded and won't be shown in the resulting GitHub issue.
 
 Now you can access the website for it at ```localhost:4000```.
 
@@ -35,9 +35,9 @@ The following environment variables are needed. Note that you will need to set t
 
 | Variable | Description | Example
 |---|---|---|
-| AWS_ACCESS_KEY_ID | AWS Access Key ID to upload screenshots | ... |
-| AWS_SECRET_ACCESS_KEY | AWS Access Key Secret to upload screenshots | ... |
-| AWS_S3_BUCKET_NAME | AWS S3 Bucket name to upload screenshots to | campaign-form-uploads |
+| AWS_ACCESS_KEY_ID | AWS Access Key ID to upload attachments | ... |
+| AWS_SECRET_ACCESS_KEY | AWS Access Key Secret to upload attachments | ... |
+| AWS_S3_BUCKET_NAME | AWS S3 Bucket name to upload attachments to | campaign-form-uploads |
 | BASE_URL | URL of the form | https://foxfooding-form.mozilla.community/ |
 | GITHUB_TOKEN | Token for the GitHub user to post issues | ... |
 | OWNER | GitHub username / organization hosting the reporting repo | mozilla |

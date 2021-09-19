@@ -48,9 +48,9 @@
     "required": true,
     "pattern": ".+"
   },
-  "screenshot": {
+  "attachment": {
     "id": 900,
-    "image": true,
-    "content": "## Screenshot"
+    "attachment": true,
+    "content": "## Attachment"
   }
 }
