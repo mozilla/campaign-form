@@ -141,6 +141,7 @@ button,
   padding: 20px 20px;
   cursor: pointer;
   font-weight: 600;
+  -webkit-appearance: none;
 }
 
 button:hover,
