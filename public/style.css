@@ -13,7 +13,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   margin: 0px;
   height: 100vh;
-  color: #000;
+  color: #000000;
   background-color: #fff;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 a {
-  color: #000;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -35,7 +35,7 @@ a:hover {
 header {
   width: 100vw;
   padding: 24px;
-  background-color: #000;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -135,8 +135,8 @@ label span {
 button,
 .button {
   width: 75%;
-  border-radius: 0;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
   border: 3px solid #1c1b22;
   padding: 20px 20px;
   cursor: pointer;
