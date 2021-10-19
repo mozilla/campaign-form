@@ -14,7 +14,7 @@ body {
   margin: 0px;
   height: 100vh;
   color: #000000;
-  background-color: #fff;
+  background-color: #000;
 }
 
 h1 {
@@ -33,7 +33,7 @@ a:hover {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   padding: 24px;
   background-color: #000000;
   text-align: center;
@@ -44,7 +44,9 @@ header img {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
+  background-color: #FFF;
+  padding-top: 20px;
 }
 
 .form-container {
@@ -168,12 +170,16 @@ button:hover,
   color: #fff;
 }
 
+.campaign-over {
+  margin-bottom: 300px;
+}
+
 footer {
   font-size: 14px;
   background-color: #000;
   color: #fff;
   padding: 50px 20px 30px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
