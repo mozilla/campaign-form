@@ -20,7 +20,7 @@
   },
   "phone": {
     "id": 400,
-    "content": "**Phone:** ",
+    "content": "**Phone/Tablet:** ",
     "pattern": ".+"
   },
   "github": {
