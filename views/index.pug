@@ -3,7 +3,7 @@ extends layout
 block content
   header
     a(href="/")
-      img(src="/logo.jpg", alt="Firefox Logo")
+      img(src="/nightly.png", alt="Firefox Nightly Logo")
 
   .container
     if submitted && success
@@ -16,42 +16,42 @@ block content
         p We're sorry.
 
     .form-container
-      h1 Stay tuned for the next campaign!
-      p.campaign-over Thank you for your contributions. The Foxfooding campaign is now over. You can still create&nbsp;
-        a(href="https://github.com/mozilla/translate/issues/")
-          span Firefox Translations issues on GitHub
-        | . Stay tuned for the next campaign!
+      //- h1 Stay tuned for the next campaign!
+      //- p.campaign-over Thank you for your contributions. The Foxfooding campaign is now over. You can still create&nbsp;
+      //-   a(href="https://github.com/mozilla/translate/issues/")
+      //-     span Firefox Translations issues on GitHub
+      //-   | . Stay tuned for the next campaign!
 
-      //- h1 Report a bug - Foxfooding for Firefox Translations
+      h1 Report a bug - Firefox Nightly 2022 Foxfooding
 
-      //- form(action="/create", method="POST", enctype="multipart/form-data")
-      //-   label Fields marked with <span>*</span> are required. Please make sure to file this form on the device you're testing on. This allows us to autocomplete the correct version and the window size.
-      //-   div(class="input-group")
-      //-     label(for="firefox") Firefox Version&nbsp;<span>*</span><br><span class="field-note">(please check the pre-filled value and adjust if necessary)</span>
-      //-     input(id="firefox", type="text", name="firefox", required, placeholder="for example: Firefox 94")
-      //-   div(class="input-group")
-      //-     label(for="resolution") Window Size&nbsp;<span>*</span>
-      //-     input(id="resolution", type="text", name="resolution", required, placeholder="for example: 1200x800")
-      //-   h2 Issue Description
-      //-   div(class="input-group")
-      //-     label(for="summary") Short summary&nbsp;<span>*</span>
-      //-     input(id="summary", type="text", name="summary", required)
-      //-   div(class="input-group")
-      //-     label(for="reproduce") <strong>Steps to reproduce&nbsp;<span>*</span></strong> - Write down everything you did immediately before you arrived at the bug as clearly as possible
-      //-     textarea(name="reproduce", required, placeholder="1) Did ...\n2) Tapped on ...\n3) etc..")
-      //-   div(class="input-group")
-      //-     label(for="expected") <strong>Expected behavior&nbsp;<span>*</span></strong> - What were you hoping/expecting Firefox to do?
-      //-     textarea(name="expected", required)
-      //-   div(class="input-group")
-      //-     label(for="actual") <strong>Actual behavior&nbsp;<span>*</span></strong> - What was the actual result, what did Firefox actually do?
-      //-     textarea(name="actual", required)
-      //-   div(class="input-group")
-      //-     label(for="attachment") Add a screenshot/recording of what you see
-      //-     input(id="attachment", type="file", accept="image/*,video/*", name="attachment")
-      //-   div(class="input-group")
-      //-     label(for="github") Your GitHub account name if you have one
-      //-     input(id="github", type="text", name="github")
-      //-   button(type="submit") Create Issue
+      form(action="/create", method="POST", enctype="multipart/form-data")
+        label Fields marked with <span>*</span> are required. Please make sure to file this form on the device you're testing on. This allows us to autocomplete the correct version and the window size.
+        div(class="input-group")
+          label(for="firefox") Firefox Version&nbsp;<span>*</span><br><span class="field-note">(please check the pre-filled value and adjust if necessary)</span>
+          input(id="firefox", type="text", name="firefox", required, placeholder="for example: Firefox 94")
+        div(class="input-group")
+          label(for="resolution") Window Size&nbsp;<span>*</span>
+          input(id="resolution", type="text", name="resolution", required, placeholder="for example: 1200x800")
+        h2 Issue Description
+        div(class="input-group")
+          label(for="summary") Short summary&nbsp;<span>*</span>
+          input(id="summary", type="text", name="summary", required)
+        div(class="input-group")
+          label(for="reproduce") <strong>Steps to reproduce&nbsp;<span>*</span></strong> - Write down everything you did immediately before you arrived at the bug as clearly as possible
+          textarea(name="reproduce", required, placeholder="1) Did ...\n2) Tapped on ...\n3) etc..")
+        div(class="input-group")
+          label(for="expected") <strong>Expected behavior&nbsp;<span>*</span></strong> - What were you hoping/expecting Firefox to do?
+          textarea(name="expected", required)
+        div(class="input-group")
+          label(for="actual") <strong>Actual behavior&nbsp;<span>*</span></strong> - What was the actual result, what did Firefox actually do?
+          textarea(name="actual", required)
+        div(class="input-group")
+          label(for="attachment") Add a screenshot/recording of what you see
+          input(id="attachment", type="file", accept="image/*,video/*", name="attachment")
+        div(class="input-group")
+          label(for="github") Your GitHub account name if you have one
+          input(id="github", type="text", name="github")
+        button(type="submit") Create Issue
 
   footer
     a(href="https://mozilla.org")
