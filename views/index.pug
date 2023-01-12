@@ -3,7 +3,7 @@ extends layout
 block content
   header
     a(href="/")
-      img(src="/nightly.png", alt="Firefox Nightly Logo")
+      img(src="/logo.png", alt="Firefox Relay Logo")
 
   .container
     if submitted && success
@@ -22,7 +22,7 @@ block content
       //-     span issues on GitHub
       //-   | . Stay tuned for the next campaign!
 
-      h1 Report a bug - Cookie Banner Handling
+      h1 Report a bug - Firefox Relay Credential Manager Foxfooding
 
       form(action="/create", method="POST", enctype="multipart/form-data")
         label Fields marked with <span>*</span> are required. Please make sure to file this form on the device you're testing on. This allows us to autocomplete the correct version and the window size.
@@ -56,7 +56,7 @@ block content
   footer
     a(href="https://mozilla.org")
       img(src="https://www.mozilla.org/media/protocol/img/logos/mozilla/white.612a25fa976b.svg")
-    p Portions of this content are ©1998–2022 by individual mozilla.org contributors. Content available under a <a rel="license" href="https://mozilla.org/foundation/licensing/website-content/">Creative Commons license</a>.
+    p Portions of this content are ©1998–2023 by individual mozilla.org contributors. Content available under a <a rel="license" href="https://mozilla.org/foundation/licensing/website-content/">Creative Commons license</a>.
     ul
       li
         a(href="/privacy/") Privacy
